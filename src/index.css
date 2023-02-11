@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.mr8 {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.App {
+  padding: 50px;
+}
