@@ -1,14 +1,14 @@
-import { useDate } from './useDate/useDate'
+import { IDate, useDate, IDateInst } from './useDate/useDate'
 
 function App() {
-  const day = useDate(new Date('2023-01-01'))
-  const month = useDate(new Date('2023-01-01'))
-  const year = useDate(new Date('2023-01-01'))
+  const date: IDate = useDate()
+  const day: IDateInst = date(new Date('2023-01-01'))
+  const month = date(new Date('2023-01-01 14:35'))
+  const year = date(new Date('2023-01-01'))
   const newDate = day.add(2, 'day')
   const newMonth = month.add(2, 'month')
   const newYear = year.add(2, 'year')
-  console.log('newDate: ', newDate)
-
+  console.log(year.format())
   return (
     <div className="App">
       <ul>
