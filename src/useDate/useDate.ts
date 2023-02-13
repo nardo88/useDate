@@ -247,7 +247,7 @@ export class IDateInst {
       ss: utils.addZero(this._seconds),
     }
     // @ts-ignore
-    return str.replace(utils.REGEX_FORMAT, (match: any) => matches[match])
+    return str.replace(utils.REGEX_FORMAT, (match: matchType) => matches[match])
   }
 }
 
